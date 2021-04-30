@@ -44,7 +44,7 @@
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": ["swagger-api/swagger-ui", "type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -52,9 +52,6 @@
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "libraries/swagger_ui": [
-                "swagger-api/swagger-ui"
-            ]
         },
         "drupal-core-project-message": {
             "include-keys": ["homepage", "support"],
