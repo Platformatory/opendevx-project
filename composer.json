@@ -20,7 +20,8 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^1.11",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "platformatory/opendevx": "dev-master"
@@ -40,6 +41,31 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            }
+        },
+        "patches": {
+            "drupal/avatars": {
+                "Version bump up": "patches/avatar-version-bump-2021-04-06.patch"
+            },
+            "drupal/conditional_fields": {
+                "Fix null notice": "https://www.drupal.org/files/issues/2021-01-21/3191984-3-notice-trying-to-access-offset-on-value-of-type-null.patch"
+            },
+            "drupal/core": {
+                "Off-canvas style resets are overriding styles": "https://www.drupal.org/files/issues/2021-01-06/off-canvas-style-resets-2958588-13.patch"
+            },
+            "drupal/jsonb": {
+                "Json formatter widget": "patches/json-formatter-2021-04-06.patch"
+            },
+            "drupal/material_admin": {
+                "Fix Format Date": "patches/material_adminx_format_date.patch",
+                "Fix implode array notice": "https://www.drupal.org/files/issues/2021-02-08/material_admin-v2-array_to_string_notice-2989199-15.patch",
+                "Hide toasts": "patches/fix-material-admin-toasts-2021-04-08.patch"
+            },
+            "drupal/menu_export": {
+                "Fix menu import errors": "patches/fix-menu-import-2021-02-09.patch"
+            },
+            "drupal/responsive_menu": {
+                "Allow override of js options": "patches/responsive-menu-customizations.patch"
             }
         },
         "installer-paths": {
