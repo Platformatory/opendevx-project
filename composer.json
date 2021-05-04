@@ -13,17 +13,13 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/protitude/module_markdown"
         }
     ],
     "require": {
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
-        "platformatory/opendevx": "1.0.2"
+        "platformatory/opendevx": "1.0.3"
     },
     "require-dev": {
         "drupal/core-dev": "^9.1"
