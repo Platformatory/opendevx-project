@@ -80,8 +80,16 @@ hooks:
         set -e
         php ./drush/platformsh_generate_drush_yml.php
         cd web
-        drush -y cache-rebuild
-        drush -y updatedb
+        drush status bootstrap | grep -q Successful
+        if [ $? -ne 0 ]; then
+            drush si opendevx --site-name="ODX Demo" --account-pass=admin123 -y
+            drush cr
+        else
+           drush cr
+           drush updb -y
+           drush cim -y
+        fi
+
 
 # The configuration of app when it is exposed to the web.
 web:
