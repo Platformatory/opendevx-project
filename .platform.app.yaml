@@ -79,17 +79,7 @@ hooks:
     deploy: |
         set -e
         php ./drush/platformsh_generate_drush_yml.php
-        cd web
-        drush cget system.site
-        if [ $? -ne 0 ]; then
-            drush si opendevx --site-name="ODX Demo" --account-pass=admin123 -y
-            drush cr
-        else
-           drush cr
-           drush updb -y
-           drush cim -y
-        fi
-
+        ./post-deploy.sh
 
 # The configuration of app when it is exposed to the web.
 web:
