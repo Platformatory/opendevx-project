@@ -80,7 +80,7 @@ hooks:
         set -e
         php ./drush/platformsh_generate_drush_yml.php
         cd web
-        drush status bootstrap | grep -q Successful
+        drush cget system.site
         if [ $? -ne 0 ]; then
             drush si opendevx --site-name="ODX Demo" --account-pass=admin123 -y
             drush cr
