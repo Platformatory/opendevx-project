@@ -13,13 +13,26 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "platformatory/opendevx",
+                "version": "develop",
+                "type": "drupal-profile",
+                "source": {
+                    "url": "https://github.com/platformatory/opendevx.git",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
-        "platformatory/opendevx": "1.0.5",
+        "platformatory/opendevx": "1.0-dev",
         "drupal/redis": "^1.5",
         "drush/drush": "^10.4",
         "platformsh/config-reader": "^2.4"
