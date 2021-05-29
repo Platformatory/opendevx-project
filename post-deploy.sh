@@ -1,7 +1,6 @@
-which drush
-./vendor/bin/drush list
-cd web
-$drush="../vendor/bin/drush"
+pwd
+cd web/
+drush="../vendor/bin/drush"
 $drush cget system.site
 if [ $? -ne 0 ]; then
   $drush si opendevx --site-name="OpenDevX Developer Exchange" --account-pass=admin123 -y -d
