@@ -1,15 +1,12 @@
 cd web
 drush cget system.site
 if [ $? -ne 0 ]; then
-  cp ./sites/default/default.settings.php ./sites/default/settings.php
-  chmod -R 755 ./sites/default
-  chmod 644 ./sites/default/settings.php
-  drush si opendevx --site-name="OpenDevX Developer Exchange" --account-pass=admin123 -y
-  drush cr
-  drush cr
+  ./vendor/bin/drush si opendevx --site-name="OpenDevX Developer Exchange" --account-pass=admin123 -y -d
+  ./vendor/bin/drush cr -y -d
+  ./vendor/bin/drush cr -y -d
 else
-  drush cr
-  drush updb -y
-  drush cim -y
+  ./vendor/bin/drush cr -y -d
+  ./vendor/bin/drush updb -y -d
+  ./vendor/bin/drush cim -y -d
 fi
 
