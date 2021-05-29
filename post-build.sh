@@ -1,5 +1,5 @@
 if [ ! -f ./sites/default/settings.php ]; then
-    cp ./sites/default/default.setting.sphp ./sites/default/settings.php
-    chmod -R 755 ./sites/default
-    chmod 644 ./sites/default/settings.php
+    cp ./web/sites/default/default.settings.php ./web/sites/default/settings.php
+    chmod -R 755 ./web/sites/default
+    chmod 644 ./web/sites/default/settings.php
 fi
