@@ -1,3 +1,5 @@
+which drush
+./vendor/bin/drush list
 cd web
 $drush="../vendor/bin/drush"
 $drush cget system.site
