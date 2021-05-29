@@ -1,5 +1,5 @@
-$drush="$HOME/.composer/vendor/bin/drush"
 cd web
+$drush="../vendor/bin/drush"
 $drush cget system.site
 if [ $? -ne 0 ]; then
   $drush si opendevx --site-name="OpenDevX Developer Exchange" --account-pass=admin123 -y -d
