@@ -10,6 +10,8 @@
 
 # Ignore sensitive information
 
+/config/sync
+
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
