@@ -1,12 +1,14 @@
-cd web
-drush cget system.site
+pwd
+cd web/
+drush="../vendor/bin/drush"
+$drush cget system.site
 if [ $? -ne 0 ]; then
-  drush si opendevx --site-name="ODX Demo" --account-pass=admin123 -y
-  drush cr
-  drush cr
+  $drush si opendevx --site-name="OpenDevX Developer Exchange" --account-pass=admin123 -y -d
+  $drush cr -y -d
+  $drush cr -y -d
 else
-  drush cr
-  drush updb -y
-  drush cim -y
+  $drush cr -y -d
+  $drush updb -y -d
+  $drush cim -y -d
 fi
 

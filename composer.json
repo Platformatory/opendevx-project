@@ -31,10 +31,10 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9",
+	"platformatory/opendevx": "dev-master",
         "drupal/core-project-message": "^9",
-        "platformatory/opendevx": "1.0-dev",
         "drupal/redis": "^1.5",
-        "drush/drush": "^10.4",
+        "drush/drush": "^10.5",
         "platformsh/config-reader": "^2.4"
     },
     "require-dev": {
@@ -46,7 +46,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+	"preferred-install": {
+	  "platformatory/opendevx": "source",
+          "*": "dist"
+        }	  
     },
     "extra": {
         "drupal-scaffold": {
