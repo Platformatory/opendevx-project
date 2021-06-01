@@ -6,8 +6,11 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/swagger-ui/*
+/web/sites/default/settings.local.php
 
 # Ignore sensitive information
+
+/config/sync
 
 # Ignore Drupal's file directory
 /web/sites/*/files/

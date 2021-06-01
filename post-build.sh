@@ -4,3 +4,8 @@ if [ ! -f ./web/sites/default/settings.php ]; then
     chmod -R 777 ./web/sites/default
     chmod 777 ./web/sites/default/settings.php
 fi
+
+if [ ! -f ./web/themes/opendevx ]; then
+    ln -sf ../profiles/contrib/opendevx/themes/custom ./web/themes/opendevx
+fi
+

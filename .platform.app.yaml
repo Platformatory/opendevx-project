@@ -4,7 +4,7 @@
 # See https://docs.platform.sh/configuration/app.html
 
 # The name of this app. Must be unique within a project.
-name: 'app'
+name: 'opendevx'
 
 # The runtime the application uses.
 type: 'php:7.4'
@@ -72,6 +72,7 @@ hooks:
     # No services are available but the disk is writeable.
     build: |
         set -e
+        ./post-build.sh
     # The deploy hook runs after your application has been deployed and started.
     # Code cannot be modified at this point but the database is available.
     # The site is not accepting requests while this script runs so keep it
@@ -79,7 +80,9 @@ hooks:
     deploy: |
         set -e
         php ./drush/platformsh_generate_drush_yml.php
-        ./post-deploy.sh
+        #./post-deploy.sh
+    post_deploy: |
+        pwd
 
 # The configuration of app when it is exposed to the web.
 web:

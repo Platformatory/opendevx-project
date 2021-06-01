@@ -28,4 +28,14 @@ OpenDevX is an open source framework for to build API Developer Exchanges & Mark
 # Contributing to Development
 
 - Modify your composer.json to add dev branches: ex - dev-beta of the distribution. Verify that you're able to access git remotes at web/profiles/contrib/opendevx
+- It is also recommended that you override the composer.json VCS locally and set it to the local repo path: For example, this might be 
+```
+"repositories": [
+  {
+    "type": "vcs"
+     "url": "/home/user/projects/opendevx-project/web/profiles/contrib/opendevx"
+  }
+]
+```
+- Unless you know how to properly lock dependencies, it is not recommended to keep a lock file (except in sensitive environments)
 - If you've set up your environment using this project, you must be mindful of sending Pull Requests against the right repository (which is platformatory/opendevx); For utility, we include a helper script called config-sink.sh. This scrubs UUID and hash from your exported config so that it can be merged with the distribution. Package dependencies follow the same workflow and must be PR'd against the distribution's composer.json.
