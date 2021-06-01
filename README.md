@@ -32,7 +32,7 @@ OpenDevX is an open source framework for to build API Developer Exchanges & Mark
 ```
 "repositories": [
   {
-    "type": "vcs"
+    "type": "path"
      "url": "/home/user/projects/opendevx-project/web/profiles/contrib/opendevx"
   }
 ]
