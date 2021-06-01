@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32149e74e5e3f2fd84cc7347227721a9",
+    "content-hash": "7ec21873b9ac717bc8d47baf325a047e",
     "packages": [
         {
             "name": "apigee/apigee-client-php",
@@ -11338,16 +11338,16 @@
         },
         {
             "name": "platformatory/opendevx",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Platformatory/opendevx.git",
-                "reference": "455f9dbfb98bfd76d676b3577a1fc05fd8b7bb12"
+                "reference": "a53f73b8c163a1f96d818d718b00c8a263724df5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Platformatory/opendevx/zipball/455f9dbfb98bfd76d676b3577a1fc05fd8b7bb12",
-                "reference": "455f9dbfb98bfd76d676b3577a1fc05fd8b7bb12",
+                "url": "https://api.github.com/repos/Platformatory/opendevx/zipball/a53f73b8c163a1f96d818d718b00c8a263724df5",
+                "reference": "a53f73b8c163a1f96d818d718b00c8a263724df5",
                 "shasum": ""
             },
             "require": {
@@ -11436,7 +11436,6 @@
             "conflict": {
                 "drupal/drupal": "*"
             },
-            "default-branch": true,
             "type": "drupal-profile",
             "extra": {
                 "merge-plugin": {
@@ -11538,9 +11537,9 @@
                 "chat": "https://www.drupal.org/node/314178",
                 "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
                 "issues": "https://github.com/Platformatory/opendevx/issues",
-                "source": "https://github.com/Platformatory/opendevx/tree/master"
+                "source": "https://github.com/Platformatory/opendevx/tree/develop"
             },
-            "time": "2021-05-31T10:23:54+00:00"
+            "time": "2021-06-01T04:18:23+00:00"
         },
         {
             "name": "platformsh/config-reader",
