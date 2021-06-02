@@ -8,8 +8,9 @@
 /web/libraries/swagger-ui/*
 /web/sites/default/settings.local.php
 
-# 
-composer.lock
+# ignore lock file and config
+# composer.lock
+# /config/sync
 
 # Ignore sensitive information
 
