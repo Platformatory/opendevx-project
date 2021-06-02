@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:Platformatory/opendevx-project.git"
         }
     ],
     "require": {
@@ -25,6 +29,7 @@
         "platformsh/config-reader": "^2.4"
     },
     "require-dev": {
+        "codeception/codeception": "^4.1",
         "drupal/core-dev": "^9.1"
     },
     "conflict": {
