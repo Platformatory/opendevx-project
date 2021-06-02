@@ -8,6 +8,9 @@
 /web/libraries/swagger-ui/*
 /web/sites/default/settings.local.php
 
+# 
+composer.lock
+
 # Ignore sensitive information
 
 # Ignore Drupal's file directory
