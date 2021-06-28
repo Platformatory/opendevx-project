@@ -11733,12 +11733,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Platformatory/opendevx.git",
-                "reference": "cf5690e47a7e11f33e8f3207962cf5fe305335d5"
+                "reference": "457ae8a53b3195d219256e70861d1a1e03b3b85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Platformatory/opendevx/zipball/cf5690e47a7e11f33e8f3207962cf5fe305335d5",
-                "reference": "cf5690e47a7e11f33e8f3207962cf5fe305335d5",
+                "url": "https://api.github.com/repos/Platformatory/opendevx/zipball/457ae8a53b3195d219256e70861d1a1e03b3b85b",
+                "reference": "457ae8a53b3195d219256e70861d1a1e03b3b85b",
                 "shasum": ""
             },
             "require": {
@@ -11935,7 +11935,7 @@
                 "issues": "https://github.com/Platformatory/opendevx/issues",
                 "source": "https://github.com/Platformatory/opendevx/tree/master"
             },
-            "time": "2021-06-28T10:35:59+00:00"
+            "time": "2021-06-28T10:55:53+00:00"
         },
         {
             "name": "platformsh/config-reader",
